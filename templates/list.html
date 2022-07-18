@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of candidates</title>
+</head>
+<body>
+<h2>List of candidates</h2>
+
+{% for candidate in list_cand %}
+    <hr>
+    <p><a href="/candidates/<id>">{{candidate.name}}</a></p>
+    <br>
+{% endfor %}
+
+</body>
+</html>
