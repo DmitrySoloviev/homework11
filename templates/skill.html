@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Candidates with skills</title>
+</head>
+<body>
+
+<h1>Candidates with skills</h1>
+{% for candidate in candidates_by_skill %}
+    <hr>
+    <p><a href="/candidates/<id>">{{candidate.name}}</a></p>
+    <br>
+{% endfor %}
+
+</body>
+</html>
